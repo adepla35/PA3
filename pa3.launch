@@ -1,0 +1,12 @@
+<launch>
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find ros_pa1)/include/config/config.rviz" />
+
+  <node type="ReadROSBag.py" name="ReadROSBag" pkg="ros_pa3" />
+
+  <node type="MainCode.py" name="MainCode" pkg="ros_pa3"/>
+  
+</launch>
+
+
+
